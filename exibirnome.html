@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<!-- Define o tipo de documento como HTML5, garantindo a compatibilidade moderna do navegador. -->
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Curso JavaScript E2E Treinamentos</title>
+
+    <!-- Define o título da página que será exibido na aba do navegador. -->
+     
+
+    <style>
+
+      body {
+
+        font-family: Arial, sans-serif; /* Aplica estilos básicos ao corpo da página, como a fonte padrão e o alinhamento centralizado. */
+
+        margin: 0;
+
+        padding: 0;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        height: 100vh;
+
+        background-color: #f4f4f9;
+
+      }
+
+      .form-container {
+
+        background: #fff; /* Define o fundo branco do formulário. */
+
+        padding: 20px;
+
+        border-radius: 8px; /* Adiciona bordas arredondadas ao contêiner do formulário. */
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica sombra ao contêiner para um efeito visual. */
+
+        text-align: center;
+
+        width: 300px;
+
+      }
+
+      .form-container h1 {
+
+        margin-bottom: 20px;
+
+        color: #333; /* Define a cor do texto do título. */
+
+      }
+
+      .form-container input {
+
+        width: 100%;
+
+        padding: 10px;
+
+        margin-bottom: 15px;
+
+        border: 1px solid #ccc;
+
+        border-radius: 4px; /* Adiciona bordas arredondadas ao campo de entrada. */
+
+      }
+
+      .form-container button {
+
+        padding: 10px 20px;
+
+        background-color: #28a745; /* Define a cor de fundo do botão. */
+
+        color: white; /* Define a cor do texto do botão. */
+
+        border: none;
+
+        border-radius: 4px; /* Adiciona bordas arredondadas ao botão. */
+
+        cursor: pointer;
+
+      }
+
+      .form-container button:hover {
+
+        background-color: #218838; /* Altera a cor do botão ao passar o mouse. */
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="form-container">
+
+      <!-- Cria um contêiner para o formulário, centralizado e estilizado com bordas arredondadas e sombra. -->
+
+      <h1>Curso JavaScript</h1>
+
+      <!-- Exibe o título principal da página no topo do formulário. -->
+
+      <p>E2E Treinamentos</p>
+
+      <label for="name">Informe seu nome:</label><br />
+
+      <input type="text" id="name" placeholder="Digite seu nome" />
+
+      <!-- Cria um campo de entrada de texto com um espaço reservado para orientar o usuário a inserir o nome. -->
+
+      <button onclick="exibirMensagem()">Enviar</button>
+
+      <!-- Cria um botão que executa a função 'exibirMensagem' ao ser clicado. -->
+
+    </div>
+
+    <!-- Escreva aqui o código do desafio -->
+     <script>
+        function exibirMensagem(){
+            const  nome = document.getElementById('name').value
+            if(nome){
+                alert(`Olá ${nome}, obrigado por participar do curso introdutório de java script 1.`)
+            }else{
+                alert('Antes de clicar no botão enviar, digite seu nome.')
+            }
+
+        }
+
+     </script>
+     
+
+  </body>
+
+</html>
